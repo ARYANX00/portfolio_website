@@ -453,7 +453,7 @@ font-size: 4rem;
     }
 }
 
-@media(max-width:1017px){
+@media (max-width: 991.98px){
     .header{
         margin: 0 0 0 -80px;
         padding: 2rem 11%;
