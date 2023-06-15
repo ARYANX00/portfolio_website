@@ -31,7 +31,7 @@ ScrollReveal({
     // reset: true,
     distance:'80px',
     duration: 2000,
-    delay:200
+    delay:100
 });
 
 ScrollReveal().reveal('.home-content , .heading', { origin: 'top' });
@@ -48,4 +48,13 @@ const typed = new Typed('.multiple-text', {
     backDelay:100,
     loop: true
 
+});
+
+
+//loader
+var headhide = document.getElementsByClassName("navbar");
+var loader = document.getElementById("preloader");
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+    headhide.style.display = "none";
 });
