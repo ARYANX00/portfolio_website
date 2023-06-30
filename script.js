@@ -71,7 +71,7 @@ form.addEventListener('submit',(e)=>{
     document.querySelector("#sub").value = "Submiting....";
     let data = new FormData(form);
    fetch('https://script.google.com/macros/s/AKfycbyaB7XIaavSZFajOKnhR67BcxoKeXhZUukwLTW5LiuybskP18Jb_8ZuP7oE0-N1qJPQ8g/exec',{
-    //mode: 'no-cors',
+    mode: 'no-cors',
     method: 'POST',
     body: data
    })
