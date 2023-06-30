@@ -51,6 +51,8 @@ const typed = new Typed('.multiple-text', {
 });
 
 
+
+
 //loader
 var headhide = document.getElementsByClassName("navbar");
 var loader = document.getElementById("preloader");
@@ -58,3 +60,24 @@ window.addEventListener("load", function(){
     loader.style.display = "none";
     headhide.style.display = "none";
 });
+
+
+
+//for submission
+
+let form = document.querySelector("form");
+form.addEventListener('submit',(e)=>{
+    e.preventDefault();
+    document.querySelector("#sub").value = "Submiting....";
+    let data = new FormData(form);
+   fetch('https://script.google.com/macros/s/AKfycbyaB7XIaavSZFajOKnhR67BcxoKeXhZUukwLTW5LiuybskP18Jb_8ZuP7oE0-N1qJPQ8g/exec',{
+    //mode: 'no-cors',
+    method: 'POST',
+    body: data
+   })
+   .then(res => res.text())
+    .then(data =>{
+        alert("SUCCESS");
+        document.querySelector("#sub").value = "Send Message"
+    });
+})
