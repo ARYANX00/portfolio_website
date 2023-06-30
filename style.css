@@ -763,6 +763,33 @@ font-size: 4rem;
 
 /* BREAKPOINT */
 
+
+@media(max-width:1200px){
+  html{
+    font-size: 55%;
+}
+.header{
+  margin: 40px 80px -70px;
+  padding: 2rem 11%;
+}
+}
+
+@media (max-width: 991.98px){
+.header{
+    margin: 0 0 0 -80px;
+    padding: 2rem 11%;
+}
+
+section{
+    padding: 10rem 9% 8rem;
+}
+
+.footer{
+    width:120rem;
+    padding: 2rem 11%;
+}
+}
+
 @media(max-width:1200px){
     html{
         font-size: 55%;
