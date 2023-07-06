@@ -70,8 +70,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault();
     document.querySelector("#sub").value = "Submiting....";
     let data = new FormData(form);
-   fetch('https://script.google.com/macros/s/AKfycbyaB7XIaavSZFajOKnhR67BcxoKeXhZUukwLTW5LiuybskP18Jb_8ZuP7oE0-N1qJPQ8g/exec',{
-    mode: 'no-cors',
+   fetch('https://script.google.com/macros/s/AKfycbx0c00h74_TVVcFxwTvUh1EmmeYdxDNxr_p4dJ47lh3RYZ089Uj0ra-6IZ8BieLvZW6zw/exec',{
     method: 'POST',
     body: data
    })
